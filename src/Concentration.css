@@ -1,0 +1,179 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.table {
+  padding-top: 38px;
+  min-width: 700px;
+}
+
+.table:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  background: #fff;
+  border: none;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 175px;
+  margin-right: 0px;
+  margin-top: 23px;
+  padding: 0;
+  text-align: center;
+  width: 134px;
+}
+
+.card-omote {
+  background-image: url(https://drive.google.com/uc?export=view&id=1yTFnOjNL55k45ixbH4_YmlLkFFjtEs1k);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card-omote:hover {
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.card-ura {
+  background-image: none;
+  cursor: unset;
+}
+
+.card:focus {
+  outline: none;
+}
+
+.kbd-navigation .card:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.main {
+  position: relative;
+  width: 680px;
+  height: 508px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 0.3em;
+  border: solid 5px #364e96;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 235, 235, 0.8);
+  z-index: 10;
+  display: block;
+}
+
+.overlay-init {
+  display: none;
+}
+.overlay-end {
+  display: block;
+}
+
+.ura {
+  height: 173px;
+  width: 120px;
+  border-radius: 4px;
+  display: table-cell;
+  border: 1px solid #000;
+  vertical-align: middle;
+}
+
+.omote {
+  display: none;
+}
+
+.atari {
+  background: rgb(255, 186, 245);
+  height: 176px;
+  width: 120px;
+  border-radius: 4px;
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px solid #000;
+}
+
+.hazure {
+  background: rgb(255, 255, 255);
+}
+
+.title {
+  text-align: center;
+  margin-top: 238px;
+  font-size: 3em;
+  font-weight: bold;
+  color: red;
+}
+
+.start-button {
+  position: absolute;
+  z-index: 100;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 2px 14px;
+  color: #fff;
+  border-style: none;
+  box-shadow: 2px 2px 3px 1px #666;
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+  text-shadow: 1px 1px 2px #000;
+  background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#36d),
+    color-stop(0.5, #248),
+    to(#36d)
+  );
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  opacity: 0.7;
+}
+
+.count-number {
+  position: absolute;
+  z-index: 100;
+  margin-top: 35px;
+  margin-left: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
