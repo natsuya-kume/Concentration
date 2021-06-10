@@ -10,7 +10,7 @@ interface GameState {
   ready: number;
   message: string;
   count: number;
-  timer: any;
+  timer: number;
   title: string;
   run: boolean;
   overlay: string;
@@ -33,7 +33,7 @@ export default class GameComponent extends Component<{}, GameState> {
       ready: -1,
       message: "",
       count: 15,
-      timer: null,
+      timer: 0,
       title: "",
       run: false,
       overlay: "overlay",
